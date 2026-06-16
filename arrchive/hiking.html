@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雲海秘境登山健行之旅</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Microsoft JhengHei",sans-serif;
+    line-height:1.8;
+    color:#333;
+    background:#f5f7f8;
+}
+
+/* 導覽列 */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,.75);
+    z-index:999;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:18px 25px;
+    display:block;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    background:#2e8b57;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80')
+    center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,.45);
+    padding:40px;
+    border-radius:15px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#2e8b57;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d6e42;
+}
+
+/* 共用區塊 */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:40px;
+    color:#2e8b57;
+}
+
+/* 行程介紹 */
+.intro{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.intro img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* 特色 */
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.feature-card h3{
+    color:#2e8b57;
+    margin-bottom:10px;
+}
+
+/* 裝備 */
+.equipment{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.equipment-item{
+    background:white;
+    padding:20px;
+    border-left:5px solid #2e8b57;
+    border-radius:10px;
+}
+
+/* 圖片牆 */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* 表單 */
+.form-section{
+    background:white;
+}
+
+.form-container{
+    max-width:800px;
+    margin:auto;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:#2e8b57;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+button:hover{
+    background:#1d6e42;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* RWD */
+@media(max-width:992px){
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .intro{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .features,
+    .equipment,
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#intro">行程介紹</a></li>
+        <li><a href="#features">特色亮點</a></li>
+        <li><a href="#equipment">裝備建議</a></li>
+        <li><a href="#gallery">健行風景</a></li>
+        <li><a href="#signup">立即報名</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+    <div class="hero-content">
+        <h1>雲海秘境登山健行之旅</h1>
+        <p>探索壯麗山景、森林步道與絕美雲海</p>
+        <a href="#signup" class="btn">立即報名</a>
+    </div>
+</header>
+
+<!-- 行程介紹 -->
+<section id="intro">
+    <h2 class="section-title">行程介紹</h2>
+
+    <div class="intro">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80">
+
+        <div>
+            <h3>二天一夜高山健行體驗</h3>
+            <p>
+                本活動規劃適合一般民眾參與，沿途經過森林步道、
+                高山草原、觀景平台與雲海秘境，
+                專業領隊全程帶領，兼顧安全與深度導覽。
+            </p>
+
+            <p>
+                行程中可欣賞日出、夕陽與夜間星空，
+                感受最純淨的大自然風光。
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 特色 -->
+<section id="features">
+    <h2 class="section-title">特色亮點</h2>
+
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>🏔 壯麗山景</h3>
+            <p>欣賞海拔2000公尺以上高山景觀。</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>☁ 雲海秘境</h3>
+            <p>清晨雲海翻騰，美景令人難忘。</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🌲 森林步道</h3>
+            <p>漫步原始森林，享受芬多精洗禮。</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📸 攝影天堂</h3>
+            <p>絕佳打卡景點與自然風光。</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- 裝備 -->
+<section id="equipment">
+    <h2 class="section-title">裝備建議</h2>
+
+    <div class="equipment">
+
+        <div class="equipment-item">
+            🥾 防滑登山鞋
+        </div>
+
+        <div class="equipment-item">
+            🎒 20~30L 登山背包
+        </div>
+
+        <div class="equipment-item">
+            🧥 防風保暖外套
+        </div>
+
+        <div class="equipment-item">
+            💧 水壺與行動糧
+        </div>
+
+        <div class="equipment-item">
+            ☔ 雨衣或雨具
+        </div>
+
+        <div class="equipment-item">
+            🔦 頭燈與備用電池
+        </div>
+
+    </div>
+</section>
+
+<!-- 圖片牆 -->
+<section id="gallery">
+    <h2 class="section-title">健行風景</h2>
+
+    <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80">
+
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80">
+
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
+
+        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80">
+
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80">
+
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80">
+
+    </div>
+</section>
+
+<!-- 報名 -->
+<section id="signup" class="form-section">
+
+    <h2 class="section-title">立即報名</h2>
+
+    <div class="form-container">
+
+        <form>
+
+            <div class="form-group">
+                <label>姓名</label>
+                <input type="text" placeholder="請輸入姓名">
+            </div>
+
+            <div class="form-group">
+                <label>聯絡電話</label>
+                <input type="tel" placeholder="09xx-xxx-xxx">
+            </div>
+
+            <div class="form-group">
+                <label>電子郵件</label>
+                <input type="email" placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+                <label>參加梯次</label>
+                <select>
+                    <option>第一梯次</option>
+                    <option>第二梯次</option>
+                    <option>第三梯次</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>備註</label>
+                <textarea rows="5"></textarea>
+            </div>
+
+            <button type="submit">
+                送出報名
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Mountain Hiking Adventure｜
+    一起走進山林，探索自然之美
+</footer>
+
+</body>
+</html>

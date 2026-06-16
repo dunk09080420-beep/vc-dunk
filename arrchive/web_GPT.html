@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- SEO -->
+  <title>林明吉｜金融科技顧問 × AI 數位轉型專家</title>
+  <meta name="description" content="林明吉｜金融科技顧問 × AI 數位轉型專家。專注金融資訊系統、印鑑核印、開戶電子化、RPA 自動化與 AI 解決方案，協助銀行、農漁會與金融機構打造更安全、更智慧、更高效的數位作業環境。" />
+  <meta name="keywords" content="金融科技顧問, AI 數位轉型, 金融資訊系統, 印鑑核印系統, 開戶電子化, RPA 自動化, 銀行顧問, 農漁會資訊, AI 解決方案" />
+  <meta name="author" content="林明吉" />
+  <link rel="canonical" href="https://example.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="林明吉｜金融科技顧問 × AI 數位轉型專家" />
+  <meta property="og:description" content="金融科技顧問、AI 解決方案專家、數位轉型顧問，協助金融機構打造高信任感企業級數位服務。" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:site_name" content="林明吉｜金融科技顧問" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="林明吉｜金融科技顧問 × AI 數位轉型專家" />
+  <meta name="twitter:description" content="金融科技顧問、AI 解決方案專家、數位轉型顧問。" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "林明吉",
+    "jobTitle": "金融科技顧問 × AI 數位轉型專家",
+    "description": "專注金融資訊系統、印鑑核印、開戶電子化、RPA 自動化與 AI 解決方案，協助金融機構數位轉型。",
+    "url": "https://example.com",
+    "sameAs": []
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            secondary: '#7c3aed',
+            accent: '#10b981',
+            ink: '#0f172a'
+          },
+          boxShadow: {
+            soft: '0 10px 40px rgba(15, 23, 42, 0.08)',
+            glow: '0 0 0 1px rgba(37,99,235,.12), 0 20px 60px rgba(37,99,235,.18)'
+          },
+          keyframes: {
+            float: {
+              '0%,100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' }
+            },
+            pulseSoft: {
+              '0%,100%': { opacity: .35, transform: 'scale(1)' },
+              '50%': { opacity: .7, transform: 'scale(1.08)' }
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' }
+            },
+            marquee: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' }
+            }
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            pulseSoft: 'pulseSoft 4s ease-in-out infinite',
+            shimmer: 'shimmer 2.5s linear infinite',
+            marquee: 'marquee 24s linear infinite'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.08), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(124,58,237,.06), transparent 24%),
+        linear-gradient(180deg, #ffffff 0%, #f8fafc 48%, #ffffff 100%);
+    }
+    .glass {
+      background: rgba(255,255,255,.68);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,.42);
+    }
+    .glass-dark {
+      background: rgba(255,255,255,.78);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(148,163,184,.14);
+    }
+    .grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(37,99,235,.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(37,99,235,.08) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,.55), transparent 96%);
+    }
+    .section-reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .section-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gradient-border {
+      position: relative;
+      isolation: isolate;
+    }
+    .gradient-border::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(90deg, rgba(37,99,235,.6), rgba(124,58,237,.55), rgba(16,185,129,.55), rgba(37,99,235,.6));
+      background-size: 300% 100%;
+      animation: shimmer 4s linear infinite;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: -1;
+    }
+    .hero-orb {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(30px);
+      opacity: .65;
+      pointer-events: none;
+    }
+    .timeline-line::before {
+      content:"";
+      position:absolute;
+      left: 18px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(37,99,235,.15), rgba(124,58,237,.22), rgba(16,185,129,.15));
+    }
+    .typing-caret {
+      display: inline-block;
+      width: 1ch;
+      animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 24s linear infinite;
+    }
+    .testimonial-card {
+      transition: transform .4s ease, opacity .4s ease, filter .4s ease;
+    }
+    .testimonial-card.inactive {
+      opacity: .45;
+      filter: blur(1px);
+      transform: scale(.96);
+    }
+  </style>
+</head>
+
+<body class="text-slate-700 antialiased selection:bg-primary/15 selection:text-primary">
+  <!-- Top Navigation -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav class="mt-3 glass rounded-2xl shadow-soft">
+        <div class="flex items-center justify-between px-4 py-3 sm:px-6">
+          <a href="#home" class="flex items-center gap-3 group">
+            <div class="h-11 w-11 rounded-2xl bg-gradient-to-br from-primary to-secondary text-white grid place-items-center shadow-glow font-bold">
+              LM
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-slate-900">林明吉</div>
+              <div class="text-xs text-slate-500">金融科技顧問 × AI 數位轉型專家</div>
+            </div>
+          </a>
+
+          <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+            <a href="#about" class="hover:text-primary transition">關於我</a>
+            <a href="#experience" class="hover:text-primary transition">專業經歷</a>
+            <a href="#services" class="hover:text-primary transition">服務方案</a>
+            <a href="#cases" class="hover:text-primary transition">成功案例</a>
+            <a href="#insights" class="hover:text-primary transition">技術觀點</a>
+            <a href="#contact" class="hover:text-primary transition">聯絡我</a>
+          </div>
+
+          <div class="hidden lg:flex items-center gap-3">
+            <a href="#contact" class="px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 hover:border-primary/30 hover:bg-primary/5 transition">
+              免費初談
+            </a>
+            <a href="https://calendar.app.google/qYzQRmMVVwcdg9va7" target="_blank" rel="noopener noreferrer"
+               class="px-4 py-2 rounded-xl text-sm font-semibold text-white bg-primary hover:bg-primary/90 shadow-glow transition">
+              立即預約
+            </a>
+          </div>
+
+          <button id="menuBtn" class="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl border border-slate-200 hover:bg-slate-50 transition" aria-label="開啟選單">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200/70 px-4 py-4">
+          <div class="flex flex-col gap-3 text-sm font-medium">
+            <a href="#home" class="py-2 hover:text-primary">首頁</a>
+            <a href="#about" class="py-2 hover:text-primary">關於我</a>
+            <a href="#experience" class="py-2 hover:text-primary">專業經歷</a>
+            <a href="#services" class="py-2 hover:text-primary">服務方案</a>
+            <a href="#cases" class="py-2 hover:text-primary">成功案例</a>
+            <a href="#insights" class="py-2 hover:text-primary">技術觀點</a>
+            <a href="#contact" class="py-2 hover:text-primary">聯絡我</a>
+            <a href="https://calendar.app.google/qYzQRmMVVwcdg9va7" target="_blank" rel="noopener noreferrer"
+               class="mt-2 inline-flex justify-center px-4 py-3 rounded-xl font-semibold text-white bg-primary shadow-glow">
+              立即預約諮詢
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="home" class="pt-28 sm:pt-32">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 grid-bg opacity-60"></div>
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="hero-orb w-64 h-64 bg-blue-200/50 top-10 left-10 animate-float"></div>
+        <div class="hero-orb w-72 h-72 bg-violet-200/40 top-36 right-[-40px] animate-float" style="animation-delay: -2s;"></div>
+        <div class="hero-orb w-56 h-56 bg-emerald-200/35 bottom-[-20px] left-1/2 animate-float" style="animation-delay: -4s;"></div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid lg:grid-cols-12 gap-10 items-center py-14 lg:py-20">
+          <div class="lg:col-span-7 section-reveal">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark text-xs font-semibold text-slate-600">
+              <span class="h-2 w-2 rounded-full bg-accent animate-pulseSoft"></span>
+              Status : Ready To Connect
+            </div>
+
+            <h1 class="mt-6 text-4xl sm:text-5xl lg:text-7xl font-semibold tracking-tight text-slate-950 leading-[1.05]">
+              以科技賦能金融，以創新驅動未來
+            </h1>
+
+            <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl leading-8">
+              15年以上金融資訊系統實務經驗，協助銀行、農漁會與金融機構打造更安全、更智慧、更高效的數位作業環境。
+            </p>
+
+            <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
+              <span class="px-3 py-2 rounded-full bg-primary/5 text-primary border border-primary/10">金融科技專家</span>
+              <span class="px-3 py-2 rounded-full bg-secondary/5 text-secondary border border-secondary/10">AI 顧問</span>
+              <span class="px-3 py-2 rounded-full bg-emerald-500/5 text-emerald-700 border border-emerald-500/10">數位轉型顧問</span>
+              <span class="px-3 py-2 rounded-full bg-sky-500/5 text-sky-700 border border-sky-500/10">資訊系統專家</span>
+              <span class="px-3 py-2 rounded-full bg-violet-500/5 text-violet-700 border border-violet-500/10">RPA 自動化專家</span>
+            </div>
+
+            <div class="mt-6 text-lg sm:text-xl font-medium text-slate-900 flex items-center gap-2">
+              <span id="typingText"></span><span class="typing-caret">|</span>
+            </div>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+              <a href="https://calendar.app.google/qYzQRmMVVwcdg9va7" target="_blank" rel="noopener noreferrer"
+                 class="group inline-flex items-center justify-center gap-3 rounded-2xl bg-primary px-6 py-4 text-white font-semibold shadow-glow hover:scale-[1.01] transition">
+                立即預約諮詢
+                <span class="opacity-0 group-hover:opacity-100 transition text-sm font-medium">→</span>
+              </a>
+              <a href="#services"
+                 class="inline-flex items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white px-6 py-4 font-semibold text-slate-700 hover:border-primary/30 hover:bg-primary/5 transition">
+                了解我的服務
+              </a>
+            </div>
+
+            <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl">
+              <div class="rounded-2xl glass-dark p-4 shadow-soft">
+                <div class="text-2xl font-bold text-slate-950"><span data-count="15">0</span>+</div>
+                <div class="text-sm text-slate-500 mt-1">Years Experience</div>
+              </div>
+              <div class="rounded-2xl glass-dark p-4 shadow-soft">
+                <div class="text-2xl font-bold text-slate-950"><span data-count="100">0</span>+</div>
+                <div class="text-sm text-slate-500 mt-1">Projects</div>
+              </div>
+              <div class="rounded-2xl glass-dark p-4 shadow-soft">
+                <div class="text-2xl font-bold text-slate-950">99.9%</div>
+                <div class="text-sm text-slate-500 mt-1">System Stability</div>
+              </div>
+              <div class="rounded-2xl glass-dark p-4 shadow-soft">
+                <div class="text-2xl font-bold text-slate-950"><span data-count="1000">0</span>+</div>
+                <div class="text-sm text-slate-500 mt-1">Training Hours</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual / Photo Area -->
+          <div class="lg:col-span-5 section-reveal">
+            <div class="relative gradient-border rounded-[2rem] p-[1px]">
+              <div class="rounded-[2rem] overflow-hidden bg-white shadow-soft">
+                <div class="relative p-8 sm:p-10">
+                  <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-white to-secondary/5"></div>
+                  <div class="relative">
+                    <div class="aspect-[4/5] rounded-[1.75rem] bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200/70 overflow-hidden relative">
+                      <div class="absolute inset-0">
+                        <div class="absolute top-8 left-8 h-24 w-24 rounded-full bg-primary/10 blur-2xl animate-pulseSoft"></div>
+                        <div class="absolute bottom-10 right-8 h-28 w-28 rounded-full bg-secondary/10 blur-2xl animate-pulseSoft" style="animation-delay:-2s;"></div>
+                        <div class="absolute inset-0 opacity-60" style="background:
+                          radial-gradient(circle at 30% 20%, rgba(37,99,235,.14), transparent 24%),
+                          radial-gradient(circle at 70% 30%, rgba(124,58,237,.12), transparent 22%),
+                          radial-gradient(circle at 50% 70%, rgba(16,185,129,.10), transparent 18%);"></div>
+                      </div>
+
+                      <div class="relative h-full p-6 flex flex-col justify-between">
+                        <div class="flex items-center justify-between">
+                          <div class="inline-flex items-center gap-2 rounded-full bg-white/75 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm">
+                            <span class="h-2 w-2 rounded-full bg-accent"></span>
+                            Enterprise Consulting
+                          </div>
+                          <div class="h-12 w-12 rounded-2xl bg-white/80 backdrop-blur flex items-center justify-center shadow-sm text-primary font-bold">
+                            AI
+                          </div>
+                        </div>
+
+                        <div class="mt-6 rounded-3xl bg-white/75 backdrop-blur p-5 shadow-soft border border-white/70">
+                          <div class="text-xs uppercase tracking-[0.28em] text-slate-500">Professional Profile</div>
+                          <div class="mt-3 text-2xl font-semibold text-slate-950">林明吉</div>
+                          <div class="mt-2 text-sm text-slate-600 leading-7">
+                            金融科技顧問 × AI 數位轉型專家<br/>
+                            銀行、農漁會、金融資訊體系實務經驗
+                          </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                          <div class="rounded-2xl bg-white/75 backdrop-blur p-4 border border-white/70">
+                            <div class="text-xs text-slate-500">專業方向</div>
+                            <div class="mt-1 text-sm font-semibold text-slate-900">安全 × 智慧 × 效率</div>
+                          </div>
+                          <div class="rounded-2xl bg-white/75 backdrop-blur p-4 border border-white/70">
+                            <div class="text-xs text-slate-500">服務模式</div>
+                            <div class="mt-1 text-sm font-semibold text-slate-900">顧問 × 導入 × 教育</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="absolute -right-5 top-10 hidden sm:block">
+                      <div class="rounded-2xl glass px-4 py-3 shadow-soft animate-float">
+                        <div class="text-xs text-slate-500">AI / FinTech</div>
+                        <div class="text-sm font-semibold text-slate-900">Secure by Design</div>
+                      </div>
+                    </div>
+                    <div class="absolute -left-5 bottom-10 hidden sm:block">
+                      <div class="rounded-2xl glass px-4 py-3 shadow-soft animate-float" style="animation-delay:-2s;">
+                        <div class="text-xs text-slate-500">Delivery</div>
+                        <div class="text-sm font-semibold text-slate-900">Enterprise Ready</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-10 items-center section-reveal">
+          <div class="lg:col-span-5">
+            <div class="rounded-[2rem] overflow-hidden gradient-border p-[1px] shadow-soft">
+              <div class="rounded-[2rem] bg-white p-6 sm:p-8">
+                <div class="aspect-[4/5] rounded-[1.5rem] bg-gradient-to-br from-slate-100 via-white to-blue-50 border border-slate-200 grid place-items-center relative overflow-hidden">
+                  <div class="absolute inset-0" style="background:
+                    radial-gradient(circle at 25% 20%, rgba(37,99,235,.12), transparent 18%),
+                    radial-gradient(circle at 75% 25%, rgba(124,58,237,.10), transparent 18%),
+                    radial-gradient(circle at 50% 70%, rgba(16,185,129,.08), transparent 22%);"></div>
+                  <div class="relative text-center px-8">
+                    <div class="mx-auto h-28 w-28 rounded-full bg-gradient-to-br from-primary to-secondary text-white grid place-items-center text-4xl font-bold shadow-glow">
+                      林
+                    </div>
+                    <div class="mt-6 text-sm uppercase tracking-[0.3em] text-slate-500">Professional Portrait Area</div>
+                    <div class="mt-3 text-xl font-semibold text-slate-950">建議放置正式形象照</div>
+                    <p class="mt-3 text-sm text-slate-600 leading-7">
+                      這裡可替換為個人品牌專業照片，用於強化信任感、專業度與企業形象。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary text-xs font-semibold border border-primary/10">
+              About Me
+            </div>
+            <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">
+              以穩定、專業與前瞻視角，陪伴金融機構完成數位升級
+            </h2>
+            <p class="mt-5 text-base sm:text-lg text-slate-600 leading-8">
+              您好，我是林明吉，目前任職於映像有限公司，擔任農金資訊中心駐點資訊服務人員，擁有超過 15 年金融資訊系統維護與技術支援實務經驗。長期深耕銀行與農漁會資訊領域，致力於提供穩定、安全且高效的資訊服務解決方案。
+            </p>
+            <p class="mt-4 text-base sm:text-lg text-slate-600 leading-8">
+              職涯歷程中，曾服務於第一銀行、陽信銀行、農漁會資訊體系與農金資訊中心，累積金融核心系統、表單電子化、印鑑核印、RPA 流程優化與 AI 應用整合等多元經驗。
+            </p>
+
+            <div class="mt-8 grid sm:grid-cols-2 gap-5">
+              <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-5">
+                <div class="text-sm font-semibold text-slate-950">專業理念</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">
+                  以使用者體驗為核心，結合金融規範、作業效率與資訊安全，打造可長期運作的數位作業環境。
+                </p>
+              </div>
+              <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-5">
+                <div class="text-sm font-semibold text-slate-950">核心價值</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">
+                  穩定可靠、清楚溝通、快速落地、持續優化，讓技術真正成為金融服務升級的推進器。
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div class="rounded-2xl bg-gradient-to-br from-white to-blue-50 border border-slate-200 p-5 text-center">
+                <div class="text-2xl font-bold text-slate-950">15+</div>
+                <div class="text-sm text-slate-500 mt-1">年經驗</div>
+              </div>
+              <div class="rounded-2xl bg-gradient-to-br from-white to-violet-50 border border-slate-200 p-5 text-center">
+                <div class="text-2xl font-bold text-slate-950">100+</div>
+                <div class="text-sm text-slate-500 mt-1">專案支援</div>
+              </div>
+              <div class="rounded-2xl bg-gradient-to-br from-white to-emerald-50 border border-slate-200 p-5 text-center">
+                <div class="text-2xl font-bold text-slate-950">全台</div>
+                <div class="text-sm text-slate-500 mt-1">金融機構服務</div>
+              </div>
+              <div class="rounded-2xl bg-gradient-to-br from-white to-sky-50 border border-slate-200 p-5 text-center">
+                <div class="text-2xl font-bold text-slate-950">CCNA</div>
+                <div class="text-sm text-slate-500 mt-1">國際認證</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-24 bg-slate-50/70">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/5 text-secondary text-xs font-semibold border border-secondary/10">
+            Professional Experience
+          </div>
+          <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">企業級金融資訊歷程，累積跨單位實戰經驗</h2>
+          <p class="mt-4 text-slate-600 leading-8">以時間軸方式呈現，清楚展現從銀行到金融資訊中心的專業演進。</p>
+        </div>
+
+        <div class="mt-12 relative timeline-line pl-14 space-y-8">
+          <div class="relative">
+            <div class="absolute left-0 top-1.5 h-9 w-9 rounded-full bg-primary text-white grid place-items-center shadow-glow">1</div>
+            <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-6">
+              <div class="flex flex-wrap items-center gap-3">
+                <h3 class="text-lg font-semibold text-slate-950">第一銀行</h3>
+                <span class="px-3 py-1 rounded-full text-xs bg-primary/5 text-primary border border-primary/10">金融系統維運</span>
+              </div>
+              <p class="mt-3 text-slate-600 leading-7">參與金融資訊系統維護、作業流程支援與跨部門技術協作，累積高標準金融環境實務經驗。</p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute left-0 top-1.5 h-9 w-9 rounded-full bg-secondary text-white grid place-items-center shadow-glow">2</div>
+            <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-6">
+              <div class="flex flex-wrap items-center gap-3">
+                <h3 class="text-lg font-semibold text-slate-950">陽信銀行</h3>
+                <span class="px-3 py-1 rounded-full text-xs bg-secondary/5 text-secondary border border-secondary/10">系統支援與改善</span>
+              </div>
+              <p class="mt-3 text-slate-600 leading-7">協助銀行內部作業系統、服務流程與使用者需求調整，提升穩定性與作業效率。</p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute left-0 top-1.5 h-9 w-9 rounded-full bg-accent text-white grid place-items-center shadow-glow">3</div>
+            <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-6">
+              <div class="flex flex-wrap items-center gap-3">
+                <h3 class="text-lg font-semibold text-slate-950">農漁會資訊體系</h3>
+                <span class="px-3 py-1 rounded-full text-xs bg-emerald-500/5 text-emerald-700 border border-emerald-500/10">流程優化</span>
+              </div>
+              <p class="mt-3 text-slate-600 leading-7">深耕農漁會資訊場域，理解前線作業需求，累積大量實務支援與流程整合經驗。</p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute left-0 top-1.5 h-9 w-9 rounded-full bg-sky-600 text-white grid place-items-center shadow-glow">4</div>
+            <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-6">
+              <div class="flex flex-wrap items-center gap-3">
+                <h3 class="text-lg font-semibold text-slate-950">農金資訊中心</h3>
+                <span class="px-3 py-1 rounded-full text-xs bg-sky-500/5 text-sky-700 border border-sky-500/10">駐點服務</span>
+              </div>
+              <p class="mt-3 text-slate-600 leading-7">擔任駐點資訊服務人員，提供系統維護、問題排除與跨單位技術支援，維持穩定營運。</p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute left-0 top-1.5 h-9 w-9 rounded-full bg-violet-600 text-white grid place-items-center shadow-glow">5</div>
+            <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-6">
+              <div class="flex flex-wrap items-center gap-3">
+                <h3 class="text-lg font-semibold text-slate-950">映像有限公司</h3>
+                <span class="px-3 py-1 rounded-full text-xs bg-violet-500/5 text-violet-700 border border-violet-500/10">顧問協作</span>
+              </div>
+              <p class="mt-3 text-slate-600 leading-7">持續整合金融、資訊與數位轉型能力，提供高信任感的專業協作與顧問服務。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Expertise -->
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary text-xs font-semibold border border-primary/10">
+            Core Expertise
+          </div>
+          <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">六大專長，對應金融機構最關鍵的數位場景</h2>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition gradient-border">
+            <div class="h-14 w-14 rounded-2xl bg-primary/10 text-primary grid place-items-center text-2xl">🏦</div>
+            <h3 class="mt-5 text-lg font-semibold text-slate-950">金融資訊系統</h3>
+            <p class="mt-3 text-slate-600 leading-7">支援金融核心作業、維運改善與跨單位協作，打造穩定可控的作業環境。</p>
+          </div>
+          <div class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="h-14 w-14 rounded-2xl bg-secondary/10 text-secondary grid place-items-center text-2xl">🖋️</div>
+            <h3 class="mt-5 text-lg font-semibold text-slate-950">印鑑核印系統</h3>
+            <p class="mt-3 text-slate-600 leading-7">強化核印流程、比對效率與作業一致性，降低人工錯誤與風險。</p>
+          </div>
+          <div class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="h-14 w-14 rounded-2xl bg-accent/10 text-accent grid place-items-center text-2xl">📄</div>
+            <h3 class="mt-5 text-lg font-semibold text-slate-950">開戶電子化</h3>
+            <p class="mt-3 text-slate-600 leading-7">從紙本到數位，優化申請流程、表單收件與審核步驟，提升體驗與效率。</p>
+          </div>
+          <div class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="h-14 w-14 rounded-2xl bg-sky-500/10 text-sky-600 grid place-items-center text-2xl">⚙️</div>
+            <h3 class="mt-5 text-lg font-semibold text-slate-950">RPA 流程自動化</h3>
+            <p class="mt-3 text-slate-600 leading-7">將重複性工作標準化、自動化，提升作業速度並減少人工耗損。</p>
+          </div>
+          <div class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="h-14 w-14 rounded-2xl bg-violet-500/10 text-violet-600 grid place-items-center text-2xl">🤖</div>
+            <h3 class="mt-5 text-lg font-semibold text-slate-950">AI 應用整合</h3>
+            <p class="mt-3 text-slate-600 leading-7">導入 AI 助理、知識庫與資料分析能力，讓資訊服務更智慧、更即時。</p>
+          </div>
+          <div class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="h-14 w-14 rounded-2xl bg-emerald-500/10 text-emerald-600 grid place-items-center text-2xl">🔒</div>
+            <h3 class="mt-5 text-lg font-semibold text-slate-950">資訊安全管理</h3>
+            <p class="mt-3 text-slate-600 leading-7">以權限、流程與風險控管為核心，協助建立更可靠的金融作業防線。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Transformation Services -->
+    <section id="services" class="py-24 bg-slate-50/70">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/5 text-emerald-700 text-xs font-semibold border border-emerald-500/10">
+            Digital Transformation Services
+          </div>
+          <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">從流程、系統到教育訓練，提供可落地的轉型方案</h2>
+        </div>
+
+        <div class="mt-12 grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center gap-4">
+              <div class="h-14 w-14 rounded-2xl bg-primary/10 text-primary grid place-items-center text-2xl">📝</div>
+              <div>
+                <h3 class="font-semibold text-slate-950">開戶表單電子化</h3>
+                <p class="text-sm text-slate-500">Paperless Onboarding</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600 leading-7">將紙本申請流程數位化，優化收件、審核與留存作業，提升前線作業效率與客戶體驗。</p>
+            <div class="mt-4 text-sm font-medium text-primary">效益：降低紙本成本、縮短作業時間、減少錯誤率</div>
+          </div>
+
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center gap-4">
+              <div class="h-14 w-14 rounded-2xl bg-secondary/10 text-secondary grid place-items-center text-2xl">🔁</div>
+              <div>
+                <h3 class="font-semibold text-slate-950">RPA 自動化導入</h3>
+                <p class="text-sm text-slate-500">Process Automation</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600 leading-7">針對重複且高頻作業建立自動化流程，協助單位減少人工作業負擔，提升準確性。</p>
+            <div class="mt-4 text-sm font-medium text-secondary">效益：節省人力、標準化流程、提高一致性</div>
+          </div>
+
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center gap-4">
+              <div class="h-14 w-14 rounded-2xl bg-accent/10 text-accent grid place-items-center text-2xl">📊</div>
+              <div>
+                <h3 class="font-semibold text-slate-950">數據分析應用</h3>
+                <p class="text-sm text-slate-500">Decision Intelligence</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600 leading-7">以可視化與數據觀點協助主管掌握作業狀況，支持更有效率的決策與改善。</p>
+            <div class="mt-4 text-sm font-medium text-emerald-700">效益：洞察趨勢、提升管理透明度、優化資源配置</div>
+          </div>
+
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center gap-4">
+              <div class="h-14 w-14 rounded-2xl bg-sky-500/10 text-sky-600 grid place-items-center text-2xl">🎓</div>
+              <div>
+                <h3 class="font-semibold text-slate-950">教育訓練服務</h3>
+                <p class="text-sm text-slate-500">Enablement Program</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600 leading-7">針對使用者、主管與資訊人員提供實務導向訓練，提升導入接受度與日常運作熟練度。</p>
+            <div class="mt-4 text-sm font-medium text-sky-700">效益：提升採用率、減少教育成本、加速上線</div>
+          </div>
+
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center gap-4">
+              <div class="h-14 w-14 rounded-2xl bg-violet-500/10 text-violet-600 grid place-items-center text-2xl">🧭</div>
+              <div>
+                <h3 class="font-semibold text-slate-950">顧問諮詢服務</h3>
+                <p class="text-sm text-slate-500">Strategy Consulting</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600 leading-7">針對制度、流程、技術與導入路線提供規劃，協助專案方向更明確、落地更穩健。</p>
+            <div class="mt-4 text-sm font-medium text-violet-700">效益：降低風險、加快決策、提升成功率</div>
+          </div>
+
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center gap-4">
+              <div class="h-14 w-14 rounded-2xl bg-emerald-500/10 text-emerald-600 grid place-items-center text-2xl">🔗</div>
+              <div>
+                <h3 class="font-semibold text-slate-950">系統整合服務</h3>
+                <p class="text-sm text-slate-500">Integration Services</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600 leading-7">將既有系統、資料與流程整合，打造更順暢的跨系統協作與資訊串接能力。</p>
+            <div class="mt-4 text-sm font-medium text-emerald-700">效益：降低重工、提升資料一致性、強化擴充性</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Solutions -->
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="flex items-end justify-between gap-4 flex-wrap">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-500/5 text-violet-700 text-xs font-semibold border border-violet-500/10">
+              AI Solutions
+            </div>
+            <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">以 SaaS Dashboard 風格呈現 AI 解決方案</h2>
+          </div>
+          <div class="text-sm text-slate-500">AI for Finance · Automation · Knowledge · Insights</div>
+        </div>
+
+        <div class="mt-12 rounded-[2rem] border border-slate-200 bg-white shadow-soft overflow-hidden">
+          <div class="grid lg:grid-cols-5">
+            <div class="lg:col-span-2 p-8 sm:p-10 bg-gradient-to-br from-slate-50 to-blue-50 border-b lg:border-b-0 lg:border-r border-slate-200">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow-sm border border-slate-200 text-xs font-semibold text-slate-600">
+                AI Command Center
+              </div>
+              <h3 class="mt-5 text-2xl font-semibold text-slate-950">金融場景中的 AI 落地組合</h3>
+              <p class="mt-4 text-slate-600 leading-8">
+                從客服、文件分析到流程助手與數據洞察，建立可被業務與資訊團隊直接使用的 AI 工具集。
+              </p>
+
+              <div class="mt-8 space-y-4">
+                <div class="rounded-2xl bg-white border border-slate-200 p-4">
+                  <div class="text-sm font-semibold text-slate-950">AI 智能客服</div>
+                  <div class="text-sm text-slate-500 mt-1">快速回應常見問題，減輕第一線壓力。</div>
+                </div>
+                <div class="rounded-2xl bg-white border border-slate-200 p-4">
+                  <div class="text-sm font-semibold text-slate-950">AI 文件分析</div>
+                  <div class="text-sm text-slate-500 mt-1">自動辨識重點內容，提升審查與整理效率。</div>
+                </div>
+                <div class="rounded-2xl bg-white border border-slate-200 p-4">
+                  <div class="text-sm font-semibold text-slate-950">AI 表單辨識</div>
+                  <div class="text-sm text-slate-500 mt-1">協助資料擷取與校驗，減少人工輸入。</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-3 p-8 sm:p-10">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+                  <div class="text-xs uppercase tracking-[0.2em] text-slate-500">01</div>
+                  <div class="mt-2 text-lg font-semibold text-slate-950">AI 金融知識庫</div>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">整合制度、流程與 FAQ，提升內部查詢效率與知識傳承。</p>
+                </div>
+                <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+                  <div class="text-xs uppercase tracking-[0.2em] text-slate-500">02</div>
+                  <div class="mt-2 text-lg font-semibold text-slate-950">AI 流程助手</div>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">在作業節點提供下一步建議，協助減少遺漏與錯誤。</p>
+                </div>
+                <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+                  <div class="text-xs uppercase tracking-[0.2em] text-slate-500">03</div>
+                  <div class="mt-2 text-lg font-semibold text-slate-950">AI 數據洞察</div>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">以視覺化儀表板與摘要洞察，協助快速理解關鍵趨勢。</p>
+                </div>
+                <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+                  <div class="text-xs uppercase tracking-[0.2em] text-slate-500">04</div>
+                  <div class="mt-2 text-lg font-semibold text-slate-950">SaaS 介面設計</div>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">以乾淨、清晰的工作台 UI，讓 AI 功能更容易被使用與導入。</p>
+                </div>
+              </div>
+
+              <div class="mt-6 rounded-3xl bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 border border-slate-200 p-5">
+                <div class="text-sm font-semibold text-slate-950">應用目標</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">
+                  讓 AI 不只是展示，而是成為金融日常作業中的實用工具。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="cases" class="py-24 bg-slate-50/70">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/5 text-sky-700 text-xs font-semibold border border-sky-500/10">
+            Case Studies
+          </div>
+          <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">三個高信任度案例，展現實戰落地能力</h2>
+        </div>
+
+        <div class="mt-12 grid lg:grid-cols-3 gap-6">
+          <article class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-slate-950">農漁會電子開戶平台</h3>
+              <span class="text-xs px-3 py-1 rounded-full bg-primary/5 text-primary border border-primary/10">Case 01</span>
+            </div>
+            <div class="mt-5">
+              <div class="text-sm font-semibold text-slate-900">挑戰</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600">紙本流程冗長、人工輸入多、資料一致性不易維持。</p>
+            </div>
+            <div class="mt-4">
+              <div class="text-sm font-semibold text-slate-900">解決方案</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600">規劃數位表單流程、資料驗證與審核節點整合。</p>
+            </div>
+            <div class="mt-4 rounded-2xl bg-primary/5 border border-primary/10 p-4">
+              <div class="text-sm font-semibold text-primary">成果</div>
+              <div class="mt-2 grid grid-cols-3 gap-3 text-center">
+                <div><div class="text-xl font-bold text-slate-950">-60%</div><div class="text-xs text-slate-500">紙本作業</div></div>
+                <div><div class="text-xl font-bold text-slate-950">+45%</div><div class="text-xs text-slate-500">效率提升</div></div>
+                <div><div class="text-xl font-bold text-slate-950">↑</div><div class="text-xs text-slate-500">體驗優化</div></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-slate-950">印鑑核印流程優化</h3>
+              <span class="text-xs px-3 py-1 rounded-full bg-secondary/5 text-secondary border border-secondary/10">Case 02</span>
+            </div>
+            <div class="mt-5">
+              <div class="text-sm font-semibold text-slate-900">挑戰</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600">核印作業需高度一致，且人工比對容易產生延遲。</p>
+            </div>
+            <div class="mt-4">
+              <div class="text-sm font-semibold text-slate-900">解決方案</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600">導入標準化核印步驟與輔助判斷機制，提升作業品質。</p>
+            </div>
+            <div class="mt-4 rounded-2xl bg-secondary/5 border border-secondary/10 p-4">
+              <div class="text-sm font-semibold text-secondary">成果</div>
+              <div class="mt-2 grid grid-cols-3 gap-3 text-center">
+                <div><div class="text-xl font-bold text-slate-950">-50%</div><div class="text-xs text-slate-500">等待時間</div></div>
+                <div><div class="text-xl font-bold text-slate-950">+30%</div><div class="text-xs text-slate-500">一致性</div></div>
+                <div><div class="text-xl font-bold text-slate-950">↓</div><div class="text-xs text-slate-500">風險下降</div></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-glow transition">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-slate-950">RPA 自動化作業導入</h3>
+              <span class="text-xs px-3 py-1 rounded-full bg-accent/5 text-emerald-700 border border-emerald-500/10">Case 03</span>
+            </div>
+            <div class="mt-5">
+              <div class="text-sm font-semibold text-slate-900">挑戰</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600">大量重複性資料整理與例行作業占用人力。</p>
+            </div>
+            <div class="mt-4">
+              <div class="text-sm font-semibold text-slate-900">解決方案</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600">建置自動化處理流程，將固定步驟交由程式執行。</p>
+            </div>
+            <div class="mt-4 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 p-4">
+              <div class="text-sm font-semibold text-emerald-700">成果</div>
+              <div class="mt-2 grid grid-cols-3 gap-3 text-center">
+                <div><div class="text-xl font-bold text-slate-950">-70%</div><div class="text-xs text-slate-500">人工負擔</div></div>
+                <div><div class="text-xl font-bold text-slate-950">+55%</div><div class="text-xs text-slate-500">作業速度</div></div>
+                <div><div class="text-xl font-bold text-slate-950">24/7</div><div class="text-xs text-slate-500">可運行</div></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/5 text-indigo-700 text-xs font-semibold border border-indigo-500/10">
+            Technology Stack
+          </div>
+          <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">技術堆疊牆，呈現多元整合能力</h2>
+        </div>
+
+        <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">HTML</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">CSS</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">JavaScript</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">Python</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">OpenAI API</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">Azure</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">Microsoft 365</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">Power Platform</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">SQL Server</div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5 text-center hover:shadow-glow transition">Cisco</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="py-24 bg-slate-50/70">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/5 text-emerald-700 text-xs font-semibold border border-emerald-500/10">
+            Achievements
+          </div>
+          <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">以數據儀表板方式展示成果</h2>
+        </div>
+
+        <div class="mt-12 grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+            <div class="text-4xl font-bold text-slate-950"><span data-count="15">0</span>+</div>
+            <div class="mt-2 text-slate-500">Years Experience</div>
+          </div>
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+            <div class="text-4xl font-bold text-slate-950"><span data-count="100">0</span>+</div>
+            <div class="mt-2 text-slate-500">Projects</div>
+          </div>
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+            <div class="text-4xl font-bold text-slate-950">99.9%</div>
+            <div class="mt-2 text-slate-500">System Stability</div>
+          </div>
+          <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+            <div class="text-4xl font-bold text-slate-950"><span data-count="1000">0</span>+</div>
+            <div class="mt-2 text-slate-500">Training Hours</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Insights -->
+    <section id="insights" class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/5 text-slate-700 text-xs font-semibold border border-slate-200">
+            Blog Insights
+          </div>
+          <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">技術觀點與實務洞察</h2>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-3 gap-6">
+          <article class="rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-soft hover:shadow-glow transition">
+            <div class="h-44 bg-gradient-to-br from-primary/15 to-sky-100"></div>
+            <div class="p-6">
+              <div class="text-xs font-semibold text-primary">FinTech Trend</div>
+              <h3 class="mt-2 text-lg font-semibold text-slate-950">金融業 AI 應用趨勢</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">從客服、作業輔助到知識管理，AI 正在重塑金融服務的效率與體驗。</p>
+            </div>
+          </article>
+          <article class="rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-soft hover:shadow-glow transition">
+            <div class="h-44 bg-gradient-to-br from-secondary/15 to-violet-100"></div>
+            <div class="p-6">
+              <div class="text-xs font-semibold text-secondary">Digital Workflow</div>
+              <h3 class="mt-2 text-lg font-semibold text-slate-950">開戶流程電子化實戰</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">如何兼顧效率、合規與使用者體驗，打造可持續的紙本轉數位方案。</p>
+            </div>
+          </article>
+          <article class="rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-soft hover:shadow-glow transition">
+            <div class="h-44 bg-gradient-to-br from-accent/15 to-emerald-100"></div>
+            <div class="p-6">
+              <div class="text-xs font-semibold text-emerald-700">Automation Strategy</div>
+              <h3 class="mt-2 text-lg font-semibold text-slate-950">RPA 如何提升作業效率</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">以自動化標準流程為核心，讓人力投入更聚焦在高價值工作。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-slate-50/70">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="flex items-end justify-between gap-4 flex-wrap">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/5 text-amber-700 text-xs font-semibold border border-amber-500/10">
+              Testimonials
+            </div>
+            <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">企業級推薦語，建立更強的信任感</h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="testPrev" class="h-11 w-11 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition">‹</button>
+            <button id="testNext" class="h-11 w-11 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition">›</button>
+          </div>
+        </div>
+
+        <div class="mt-10 overflow-hidden">
+          <div id="testimonialTrack" class="grid md:grid-cols-3 gap-6">
+            <div class="testimonial-card rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+              <div class="text-sm leading-8 text-slate-600">「林顧問對金融流程與系統維運的理解非常深入，能快速抓住問題核心，並提出可落地的優化建議。」</div>
+              <div class="mt-5 font-semibold text-slate-950">金融機構主管</div>
+              <div class="text-sm text-slate-500">銀行資訊部門</div>
+            </div>
+            <div class="testimonial-card rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+              <div class="text-sm leading-8 text-slate-600">「他不只懂技術，更懂現場作業節奏，能把複雜流程整理得非常清楚，讓導入更順利。」</div>
+              <div class="mt-5 font-semibold text-slate-950">專案經理</div>
+              <div class="text-sm text-slate-500">數位轉型專案</div>
+            </div>
+            <div class="testimonial-card rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+              <div class="text-sm leading-8 text-slate-600">「在教育訓練與系統溝通上十分專業，能讓非技術人員快速理解並提升採用率。」</div>
+              <div class="mt-5 font-semibold text-slate-950">營運主管</div>
+              <div class="text-sm text-slate-500">農漁會資訊體系</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary text-xs font-semibold border border-primary/10">
+          FAQ
+        </div>
+        <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">常見問題</h2>
+
+        <div class="mt-10 space-y-4" id="faqList">
+          <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-slate-950">
+              你主要服務哪些金融單位？
+              <span class="transition group-open:rotate-45 text-primary text-xl">+</span>
+            </summary>
+            <p class="mt-4 text-slate-600 leading-7">主要聚焦銀行、農漁會、金融資訊中心與相關金融服務單位，協助數位化與流程優化。</p>
+          </details>
+          <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-slate-950">
+              可以協助開戶電子化嗎？
+              <span class="transition group-open:rotate-45 text-primary text-xl">+</span>
+            </summary>
+            <p class="mt-4 text-slate-600 leading-7">可以，包含表單規劃、流程設計、資料驗證、使用者體驗與導入建議。</p>
+          </details>
+          <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-slate-950">
+              RPA 導入是否需要大量改系統？
+              <span class="transition group-open:rotate-45 text-primary text-xl">+</span>
+            </summary>
+            <p class="mt-4 text-slate-600 leading-7">不一定，多數情況可先從現有流程優化開始，再逐步建立更完整的自動化架構。</p>
+          </details>
+          <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-slate-950">
+              AI 方案會不會太複雜？
+              <span class="transition group-open:rotate-45 text-primary text-xl">+</span>
+            </summary>
+            <p class="mt-4 text-slate-600 leading-7">設計原則是可用、可管、可擴充，先從能立即改善效率的場景切入。</p>
+          </details>
+          <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-slate-950">
+              可以提供教育訓練嗎？
+              <span class="transition group-open:rotate-45 text-primary text-xl">+</span>
+            </summary>
+            <p class="mt-4 text-slate-600 leading-7">可以，包含系統操作、流程理解、顧問工作坊與內訓式導入支持。</p>
+          </details>
+          <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-slate-950">
+              如何開始合作？
+              <span class="transition group-open:rotate-45 text-primary text-xl">+</span>
+            </summary>
+            <p class="mt-4 text-slate-600 leading-7">可先透過預約諮詢，說明現況與需求，再規劃最適合的導入路徑與合作方式。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-slate-50/70">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-5">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/5 text-slate-700 text-xs font-semibold border border-slate-200">
+              Contact
+            </div>
+            <h2 class="mt-5 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-950">歡迎與我聯繫，討論您的數位轉型需求</h2>
+            <p class="mt-4 text-slate-600 leading-8">
+              無論是系統優化、流程自動化、AI 應用導入或教育訓練，都可以先從需求交流開始。
+            </p>
+
+            <div class="mt-8 space-y-4 text-sm">
+              <div class="rounded-2xl bg-white border border-slate-200 p-4 shadow-soft">
+                <div class="font-semibold text-slate-950">服務重點</div>
+                <div class="mt-1 text-slate-600">金融科技顧問｜AI 整合｜RPA｜流程優化｜資訊系統</div>
+              </div>
+              <div class="rounded-2xl bg-white border border-slate-200 p-4 shadow-soft">
+                <div class="font-semibold text-slate-950">合作模式</div>
+                <div class="mt-1 text-slate-600">顧問諮詢｜專案導入｜教育訓練｜長期協作</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <form class="rounded-[2rem] bg-white border border-slate-200 shadow-soft p-6 sm:p-8">
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-sm font-medium text-slate-700">姓名</label>
+                  <input type="text" placeholder="請輸入姓名" class="mt-2 w-full rounded-2xl border-slate-200 focus:border-primary focus:ring-primary/20 px-4 py-3" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-slate-700">Email</label>
+                  <input type="email" placeholder="name@example.com" class="mt-2 w-full rounded-2xl border-slate-200 focus:border-primary focus:ring-primary/20 px-4 py-3" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-slate-700">電話</label>
+                  <input type="tel" placeholder="請輸入電話" class="mt-2 w-full rounded-2xl border-slate-200 focus:border-primary focus:ring-primary/20 px-4 py-3" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-slate-700">需求類型</label>
+                  <select class="mt-2 w-full rounded-2xl border-slate-200 focus:border-primary focus:ring-primary/20 px-4 py-3">
+                    <option>顧問諮詢</option>
+                    <option>系統整合</option>
+                    <option>開戶電子化</option>
+                    <option>RPA 導入</option>
+                    <option>AI 解決方案</option>
+                    <option>教育訓練</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mt-5">
+                <label class="block text-sm font-medium text-slate-700">需求說明</label>
+                <textarea rows="6" placeholder="請簡述您的現況、問題與期待成果" class="mt-2 w-full rounded-2xl border-slate-200 focus:border-primary focus:ring-primary/20 px-4 py-3"></textarea>
+              </div>
+              <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                <a href="mailto:hello@example.com" class="inline-flex justify-center rounded-2xl bg-primary px-6 py-4 text-white font-semibold shadow-glow hover:bg-primary/90 transition">
+                  送出需求
+                </a>
+                <a href="https://calendar.app.google/qYzQRmMVVwcdg9va7" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex justify-center rounded-2xl border border-slate-200 px-6 py-4 font-semibold text-slate-700 hover:bg-slate-50 transition">
+                  直接預約
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Booking -->
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 section-reveal">
+        <div class="rounded-[2rem] overflow-hidden gradient-border p-[1px]">
+          <div class="rounded-[2rem] bg-gradient-to-br from-primary via-secondary to-slate-900 text-white p-8 sm:p-12 lg:p-16 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-25" style="background:
+              radial-gradient(circle at 20% 20%, rgba(255,255,255,.25), transparent 18%),
+              radial-gradient(circle at 80% 30%, rgba(255,255,255,.18), transparent 18%),
+              radial-gradient(circle at 50% 80%, rgba(255,255,255,.12), transparent 22%);"></div>
+
+            <div class="relative grid lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-xs font-semibold border border-white/15">
+                  Consultation Booking
+                </div>
+                <h2 class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
+                  立即預約免費顧問諮詢
+                </h2>
+                <p class="mt-4 text-white/85 leading-8 max-w-3xl">
+                  讓我們先用 30 分鐘了解您的需求，快速判斷可行方案、導入優先順序與預期效益。
+                </p>
+              </div>
+              <div class="lg:col-span-4 flex lg:justify-end">
+                <a href="https://calendar.app.google/qYzQRmMVVwcdg9va7" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-4 font-semibold text-slate-950 shadow-soft hover:scale-[1.01] transition">
+                  預約免費顧問諮詢
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div>
+          <div class="flex items-center gap-3">
+            <div class="h-11 w-11 rounded-2xl bg-gradient-to-br from-primary to-secondary text-white grid place-items-center shadow-glow font-bold">
+              LM
+            </div>
+            <div>
+              <div class="font-semibold text-slate-950">林明吉</div>
+              <div class="text-sm text-slate-500">金融科技顧問 × AI 數位轉型專家</div>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600 leading-7 max-w-sm">
+            專注金融資訊系統、印鑑核印、開戶電子化、RPA 自動化與 AI 解決方案，協助金融機構打造高信任感數位服務。
+          </p>
+        </div>
+
+        <div>
+          <div class="text-sm font-semibold text-slate-950">快速連結</div>
+          <div class="mt-4 flex flex-col gap-3 text-sm text-slate-600">
+            <a href="#about" class="hover:text-primary">關於我</a>
+            <a href="#experience" class="hover:text-primary">專業經歷</a>
+            <a href="#services" class="hover:text-primary">服務方案</a>
+            <a href="#cases" class="hover:text-primary">成功案例</a>
+            <a href="#contact" class="hover:text-primary">聯絡我</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="text-sm font-semibold text-slate-950">社群圖示</div>
+          <div class="mt-4 flex items-center gap-3">
+            <a href="#" class="h-11 w-11 rounded-xl border border-slate-200 grid place-items-center hover:bg-slate-50 transition" aria-label="LinkedIn">in</a>
+            <a href="#" class="h-11 w-11 rounded-xl border border-slate-200 grid place-items-center hover:bg-slate-50 transition" aria-label="Facebook">f</a>
+            <a href="#" class="h-11 w-11 rounded-xl border border-slate-200 grid place-items-center hover:bg-slate-50 transition" aria-label="Email">@</a>
+          </div>
+          <p class="mt-4 text-sm text-slate-500">© 2026 林明吉. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+    // Header blur on scroll
+    const header = document.getElementById('site-header');
+    const onScroll = () => {
+      const scrolled = window.scrollY > 10;
+      header.classList.toggle('shadow-soft', scrolled);
+      header.querySelector('nav')?.classList.toggle('bg-white/80', scrolled);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Smooth anchor offset for fixed header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const id = this.getAttribute('href');
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+
+    // Typing animation
+    const typingText = document.getElementById('typingText');
+    const roles = ['金融科技顧問', 'AI 顧問', '數位轉型顧問', '資訊系統專家', 'RPA 自動化專家'];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function typeLoop() {
+      const current = roles[roleIndex];
+      if (!deleting) {
+        charIndex++;
+        typingText.textContent = current.slice(0, charIndex);
+        if (charIndex === current.length) {
+          deleting = true;
+          setTimeout(typeLoop, 1200);
+          return;
+        }
+      } else {
+        charIndex--;
+        typingText.textContent = current.slice(0, charIndex);
+        if (charIndex === 0) {
+          deleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      }
+      setTimeout(typeLoop, deleting ? 45 : 80);
+    }
+    typeLoop();
+
+    // Intersection Observer for reveal
+    const revealEls = document.querySelectorAll('.section-reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // Count up animation
+    const counters = document.querySelectorAll('[data-count]');
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const end = parseInt(el.getAttribute('data-count'), 10);
+        let start = 0;
+        const duration = 1600;
+        const step = Math.max(1, Math.floor(end / (duration / 16)));
+        const timer = setInterval(() => {
+          start += step;
+          if (start >= end) {
+            el.textContent = end;
+            clearInterval(timer);
+          } else {
+            el.textContent = start;
+          }
+        }, 16);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(counter => countObserver.observe(counter));
+
+    // Testimonials carousel (simple slide highlight)
+    const testimonials = Array.from(document.querySelectorAll('.testimonial-card'));
+    const prevBtn = document.getElementById('testPrev');
+    const nextBtn = document.getElementById('testNext');
+    let activeIndex = 0;
+
+    function renderTestimonials() {
+      testimonials.forEach((card, idx) => {
+        card.classList.toggle('inactive', idx !== activeIndex);
+      });
+    }
+    function nextTestimonial() {
+      activeIndex = (activeIndex + 1) % testimonials.length;
+      renderTestimonials();
+    }
+    function prevTestimonial() {
+      activeIndex = (activeIndex - 1 + testimonials.length) % testimonials.length;
+      renderTestimonials();
+    }
+    prevBtn?.addEventListener('click', prevTestimonial);
+    nextBtn?.addEventListener('click', nextTestimonial);
+    renderTestimonials();
+    setInterval(nextTestimonial, 4500);
+
+    // Hero parallax accents
+    const hero = document.querySelector('section');
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 14;
+      const y = (e.clientY / window.innerHeight - 0.5) * 14;
+      document.querySelectorAll('.hero-orb').forEach((orb, i) => {
+        const factor = (i + 1) * 0.35;
+        orb.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+      });
+    }, { passive: true });
+
+    // FAQ details open one at a time
+    document.querySelectorAll('#faqList details').forEach(details => {
+      details.addEventListener('toggle', () => {
+        if (details.open) {
+          document.querySelectorAll('#faqList details').forEach(other => {
+            if (other !== details) other.open = false;
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
